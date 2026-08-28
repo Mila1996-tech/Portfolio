@@ -1,0 +1,216 @@
+/* =========================================
+   Базовые настройки и сброс отступов
+   ========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+  background-color: #ffffff;
+}
+
+/* Общий контейнер: ограничивает ширину контента и центрирует его */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Заголовки секций — общий стиль */
+.section {
+  padding: 60px 0;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* =========================================
+   Шапка сайта
+   ========================================= */
+.header {
+  background-color: #1f2937; /* тёмно-серый фон */
+  color: #ffffff;
+  padding: 50px 0 30px;
+  text-align: center;
+}
+
+.header__name {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.header__role {
+  font-size: 1.2rem;
+  color: #9ca3af; /* приглушённый серый для подзаголовка */
+  margin-bottom: 20px;
+}
+
+/* Навигация в шапке */
+.header__nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.header__nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header__nav a:hover {
+  color: #60a5fa; /* акцентный голубой при наведении */
+}
+
+/* =========================================
+   Секция «Обо мне»
+   ========================================= */
+.about__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* на узких экранах фото и текст переносятся друг под друга */
+  justify-content: center;
+  text-align: left;
+}
+
+.about__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* круглая фотография */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about__text {
+  max-width: 600px;
+  font-size: 1.05rem;
+  color: #4b5563;
+}
+
+/* =========================================
+   Секция «Проекты»
+   ========================================= */
+.projects {
+  background-color: #f9fafb; /* лёгкий фон, отделяющий секцию от соседних */
+}
+
+/* Сетка карточек: адаптивное количество колонок */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card__body {
+  padding: 20px;
+}
+
+.project-card__title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-card__description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 14px;
+}
+
+.project-card__link {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card__link:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   Секция «Контакты»
+   ========================================= */
+.contacts {
+  text-align: center;
+}
+
+.contacts__text {
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.contacts__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contacts__list a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contacts__list a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   Подвал сайта
+   ========================================= */
+.footer {
+  background-color: #1f2937;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   Адаптивность для маленьких экранов
+   ========================================= */
+@media (max-width: 600px) {
+  .header__name {
+    font-size: 2rem;
+  }
+
+  .section__title {
+    font-size: 1.6rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+}
