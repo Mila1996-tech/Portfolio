@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Имя Фамилия — Портфолио</title>
+
+  <!-- Подключаем внешние стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Шапка сайта ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <h1 class="header__name">Имя Фамилия</h1>
+      <p class="header__role">Профессия / специализация</p>
+
+      <!-- Навигация по разделам страницы -->
+      <nav class="header__nav">
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Секция «Обо мне» ===== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section__title">Обо мне</h2>
+        <div class="about__content">
+          <img
+            class="about__photo"
+            src="https://placehold.co/240x240"
+            alt="Фото профиля"
+          >
+          <p class="about__text">
+            Здесь будет текст о вас: кто вы, чем занимаетесь, какой у вас опыт
+            и что вас вдохновляет в работе. Замените этот текст-заглушку
+            своим реальным описанием — расскажите о навыках, подходе к работе
+            и профессиональных интересах.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Секция «Проекты» ===== -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section__title">Проекты</h2>
+
+        <!-- Сетка карточек с проектами -->
+        <div class="projects__grid">
+
+          <!-- Карточка проекта -->
+          <article class="project-card">
+            <img
+              class="project-card__image"
+              src="https://placehold.co/400x250"
+              alt="Превью проекта 1"
+            >
+            <div class="project-card__body">
+              <h3 class="project-card__title">Название проекта 1</h3>
+              <p class="project-card__description">
+                Краткое описание проекта: задача, используемые технологии
+                и результат.
+              </p>
+              <a href="#" class="project-card__link">Смотреть проект →</a>
+            </div>
+          </article>
+
+          <!-- Карточка проекта -->
+          <article class="project-card">
+            <img
+              class="project-card__image"
+              src="https://placehold.co/400x250"
+              alt="Превью проекта 2"
+            >
+            <div class="project-card__body">
+              <h3 class="project-card__title">Название проекта 2</h3>
+              <p class="project-card__description">
+                Краткое описание проекта: задача, используемые технологии
+                и результат.
+              </p>
+              <a href="#" class="project-card__link">Смотреть проект →</a>
+            </div>
+          </article>
+
+          <!-- Карточка проекта -->
+          <article class="project-card">
+            <img
+              class="project-card__image"
+              src="https://placehold.co/400x250"
+              alt="Превью проекта 3"
+            >
+            <div class="project-card__body">
+              <h3 class="project-card__title">Название проекта 3</h3>
+              <p class="project-card__description">
+                Краткое описание проекта: задача, используемые технологии
+                и результат.
+              </p>
+              <a href="#" class="project-card__link">Смотреть проект →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Секция «Контакты» ===== -->
+    <section id="contacts" class="section contacts">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <p class="contacts__text">
+          Буду рад обсудить новые проекты и предложения о сотрудничестве.
+        </p>
+        <ul class="contacts__list">
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Подвал сайта ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Имя Фамилия. Все права защищены.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
